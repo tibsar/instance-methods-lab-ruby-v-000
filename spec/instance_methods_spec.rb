@@ -8,7 +8,6 @@ describe 'Dog' do
   describe '#bark' do
     it 'responds to the #bark instance method' do
       fido = Dog.new
-      binding.pry
       expect(fido).to respond_to(:bark)
     end
 
