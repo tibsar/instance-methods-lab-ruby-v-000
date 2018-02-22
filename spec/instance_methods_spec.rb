@@ -21,7 +21,6 @@ describe 'Dog' do
 
   describe '#sit' do
     it 'responds to the #sit instance method' do
-      fido
       fido = Dog.new
       expect(fido).to respond_to(:sit)
     end
