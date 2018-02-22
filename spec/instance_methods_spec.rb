@@ -1,3 +1,4 @@
+require 'pry'
 describe 'Dog' do
   it 'is defined within lib/dog.rb' do
     expect(defined?(Dog)).to be_truthy
@@ -7,6 +8,7 @@ describe 'Dog' do
   describe '#bark' do
     it 'responds to the #bark instance method' do
       fido = Dog.new
+      binding.pry
       expect(fido).to respond_to(:bark)
     end
 
@@ -20,6 +22,7 @@ describe 'Dog' do
 
   describe '#sit' do
     it 'responds to the #sit instance method' do
+      fido
       fido = Dog.new
       expect(fido).to respond_to(:sit)
     end
